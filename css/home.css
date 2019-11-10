@@ -1,0 +1,211 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+#page1 {
+  background: url(https://i.ytimg.com/vi/2yKsDZrEF7U/maxresdefault.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Righteous', cursive;
+}
+#Header{
+font-size:50px; text-shadow:3px 3px black;
+overflow:hidden;
+color:rgba(255,255,255,0.8);
+animation: typing-1 5s steps(500, end) infinite , blink-caret .65s step-end infinite;
+white-space: nowrap;
+ border-right: .15em solid white;
+ width:680px;
+ height: 70px;
+ position:absolute;
+ left:50%;
+ top:50%;
+ transform:translate(-50%);
+ text-align:right;
+}
+@keyframes typing-1 {
+
+ 0% { width: 0 }
+  50%{
+    width:680px;
+  }
+  60%{
+    width:680px;
+  }
+  70%{
+    width:680px;
+  }
+  80%{
+    width:680px;
+  }
+  90%{
+    width:680px;
+  }
+  100%{width:0}
+
+  }
+
+
+   @keyframes blink-caret {
+   from, to { border-color: white }
+    50% { border-color: transparent; }
+   }
+
+
+
+/*add*/
+.header{
+    height: 80px;
+    background-color: #273240;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100%;
+}
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img{
+  width: 80px;
+}
+.header .nav{
+  float: right;
+}
+.menus{
+  float: right;
+  margin-top: 25px;
+}
+#page1 .menus > li > a{
+  background: none !important;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: none;
+}
+.sf-menu ul{
+  background-color: #273240 !important;
+}
+.sf-menu li li > a:hover, .sf-menu li li.sfHover > a, .sf-menu li li.current > a{
+  color: #fff !important;
+}
+.listul{
+  overflow: hidden;
+  padding-top: 300px;
+  margin-bottom: 50px;
+}
+.listul li{
+ /* width: 33.33%;*/
+  float: left;
+  background-color: #2c77e8;
+  /*height: 180px;*/
+      width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.listul .b2{
+  background-color: #01b9ff;
+}
+.listul .b3{
+  background-color: #01ffe8;
+}
+.listul li{
+  text-align: center;
+   margin-left:90px;
+}
+.listul li a{
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+}
+.listul li img{
+  margin-top:40px;
+
+}
+.listul li p{
+ font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size:30px;
+    color: #fff;
+    margin-top: 30px;
+}
+#Header{
+  top: 170px;
+}
+#content{
+  margin-bottom: 70px;
+}
+.foot{
+  background: #253340;
+}
+.container_24 .grid_5{
+  margin-left: 50px;
+}
+.container1{
+  width: 950px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1280px) {
+    .header{
+      display: none;
+    }
+}
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    /* background:rgba(0,0,0,.4); */
+    cursor:pointer;
+    display:none;
+    /* height:100%; */
+    position:absolute;
+    text-align:center;
+    top:350px;
+    left: 100px;
+    width:50%;
+    z-index:10000;
+}
+.hover_bkgr_fricc > div {
+    /* background-color: #01b9ff; */
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: fixed;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #f00;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 4px;
+    display: inline-block;
+    font-weight: bold;
+}
+/* Popup box BEGIN */
